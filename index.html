@@ -257,6 +257,27 @@ body {
   color: #f9d976;
   margin-bottom: 15px;
 }
+/* PREMIUM PROJECT ANIMATION */
+.project {
+  animation: fadeUp 0.8s ease both;
+}
+
+.project:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #f9d976;
+  box-shadow: 0 15px 40px rgba(249, 217, 118, 0.25);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
 </head>
 
