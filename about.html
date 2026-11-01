@@ -108,55 +108,72 @@ footer {
     font-size: 30px;
   }
 }
-  .site-header {
+ .site-header {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 18px 25px;
-    background: #101f35;
-    border-bottom: 1px solid #d4af37;
+    gap: 18px;
+    background: #11182b;
     position: relative;
-    
+    z-index: 1000;
+}
+
+.site-header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8b477;
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 10px;
 }
 
-.nav-icon {
+.nav-icon,
+.menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: 1px solid #354052;
+    border-radius: 12px;
+    background: #172235;
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu-icon:hover,
+.nav-icon:hover,
+.menu-toggle:hover {
+    background: #d8b477;
+    color: #11182b;
 }
 
 .menu-wrap {
     position: relative;
 }
 
-.menu-toggle {
-    background: transparent;
-    color: white;
-    border: 1px solid #d4af37;
-    border-radius: 10px;
-    padding: 9px 13px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
 .menu-panel {
     display: none;
     position: absolute;
+    top: 55px;
     right: 0;
-    top: 50px;
-    min-width: 220px;
-    background: #172943;
-    border: 1px solid #d4af37;
-    border-radius: 12px;
+    width: 240px;
     padding: 10px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    background: #11182b;
+    border: 1px solid #354052;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px #0008;
+    z-index: 1001;
 }
 
 .menu-panel.show {
@@ -165,25 +182,33 @@ footer {
 
 .menu-panel a {
     display: block;
+    padding: 12px;
     color: white;
     text-decoration: none;
-    padding: 12px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .menu-panel a:hover {
-    background: #263d5c;
+    background: #26364c;
+    color: #d8b477;
 }
 
 @media (max-width: 600px) {
     .site-header {
-        padding: 15px;
+        padding: 18px 10px;
+        gap: 18px;
     }
 
     .nav-actions {
-        gap: 10px;
+        gap: 8px;
     }
-}
+
+    .nav-icon,
+    .menu-toggle {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+} 
 </style>
 </head>
 
@@ -193,7 +218,7 @@ footer {
   <div class="logo">SA.</div>
   <div class="nav-actions">
     <a href="index.html" class="nav-icon">🏠 Home</a>
-    <a href="about.html" class="nav-icon">👤 About</a>
+    
     <div class="menu-wrap">
       <button class="menu-toggle"
       onclick="document.getElementById('siteMenu').classList.toggle('show')">
