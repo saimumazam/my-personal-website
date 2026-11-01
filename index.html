@@ -444,6 +444,10 @@ nav a {
   .site-header .logo {
     font-size: 23px;
   }
+}
+/* Homepage: show only selected sections */
+body > section:not(#healthcare) {
+    display: none !important;
 }    
 </style>
 </head>
@@ -491,22 +495,10 @@ nav a {
     <img class="avatar" src="saimum-profile.jpg" alt="Saimum Azam">
   <h1>Hi, I'm <span>Saimum Azam</span></h1>
   <p>Technology Enthusiast | Aspiring Developer | Digital Creator</p>
-  <a class="btn" href="#about">Explore My World</a>
+  <a class="btn" href="about.html">Explore My World</a>
 </div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about">
-    <p>
-      Welcome to my personal website!
-      I'm Saimum Azam from West Bengal, India.
-      I love technology, software development,
-      artificial intelligence and digital innovation.
-      I believe in learning, building and improving
-      every single day.
-    </p>
-  </div>
-</section>
+
 <section id="healthcare">
   <h2>Healthcare & Diagnostic Services</h2>
 
