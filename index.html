@@ -304,6 +304,46 @@ body {
 .contact-btn:hover {
   transform: translateY(-5px);
 }
+/* Common Navigation Alignment */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 15px auto;
+    padding: 12px 10px;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+}    
 </style>
 </head>
 
