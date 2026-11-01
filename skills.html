@@ -1,1 +1,244 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Skills | Saimum Azam</title>
+<meta name="description" content="Explore the professional healthcare, diagnostic and technology skills of Saimum Azam.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d152b;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+header {
+    background: #101a32;
+    padding: 22px;
+    text-align: center;
+    border-bottom: 1px solid #d6b94e;
+}
+
+.logo {
+    color: #f5d76e;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5d76e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #64a5ff;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #bdc8dc;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #f5d76e;
+    margin: 30px 0 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.skill-card {
+    background: #1d2943;
+    border: 1px solid #6c674f;
+    border-radius: 16px;
+    padding: 22px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #f5d76e;
+}
+
+.skill-card h3 {
+    color: #f5d76e;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #c5cee0;
+}
+
+.experience {
+    margin-top: 35px;
+    padding: 25px;
+    background: #1d2943;
+    border-radius: 16px;
+    border: 1px solid #6c674f;
+}
+
+.back {
+    display: block;
+    width: fit-content;
+    margin: 35px auto;
+    background: #e9c34e;
+    color: #101a32;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aab6ca;
+    border-top: 1px solid #343e54;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SA.</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="experience.html">Experience</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h1>My Professional Skills</h1>
+
+    <p class="subtitle">
+        My experience, abilities and professional strengths.
+    </p>
+
+    <h2>Healthcare & Diagnostic Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>🩸 Blood Sample Collection</h3>
+            <p>Patient-friendly blood sample collection and home collection coordination.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🔬 Diagnostic Lab Coordination</h3>
+            <p>Coordination with diagnostic laboratories for reliable testing services.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🏠 Home Collection Support</h3>
+            <p>Helping patients access convenient sample collection services from home.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🤝 Patient Handling</h3>
+            <p>Patient communication, support and service coordination.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>📋 Report Coordination</h3>
+            <p>Helping patients coordinate their diagnostic reports.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🏥 Healthcare Services</h3>
+            <p>Healthcare support and diagnostic service management.</p>
+        </div>
+
+    </div>
+
+    <h2>Technology & Digital Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>💻 Web Development</h3>
+            <p>Learning and building websites using HTML and CSS.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>Exploring AI tools and modern technology.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>📱 Digital Marketing</h3>
+            <p>Learning digital promotion and online communication.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🎨 Digital Creation</h3>
+            <p>Creating digital content, posters and visual designs.</p>
+        </div>
+
+    </div>
+
+    <div class="experience">
+        <h2>⭐ My Professional Strength</h2>
+        <p>
+            Over 7 years of experience in healthcare support,
+            blood sample collection, diagnostic coordination
+            and patient service management.
+        </p>
+    </div>
+
+    <a class="back" href="index.html">← Back to Home</a>
+
+</main>
+
+<footer>
+    © <span id="year"></span> Saimum Azam. All Rights Reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
