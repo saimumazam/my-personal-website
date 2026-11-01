@@ -343,27 +343,150 @@ nav a {
         padding: 9px 12px;
         font-size: 14px;
     }
+}
+/* PROFESSIONAL HEADER DESIGN */
+
+.site-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #11182b;
+  position: relative;
+  z-index: 1000;
+}
+
+.site-header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d8b477;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon,
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: 1px solid #354052;
+  border-radius: 12px;
+  background: #172235;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nav-icon:hover,
+.menu-toggle:hover {
+  background: #d8b477;
+  color: #11182b;
+}
+
+.menu-wrap {
+  position: relative;
+}
+
+.menu-panel {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 240px;
+  padding: 10px;
+  background: #11182b;
+  border: 1px solid #354052;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px #0008;
+}
+
+.menu-panel.show {
+  display: block;
+}
+
+.menu-panel a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.menu-panel a:hover {
+  background: #26364c;
+  color: #d8b477;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 14px 10px;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-icon,
+  .menu-toggle {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .site-header .logo {
+    font-size: 23px;
+  }
 }    
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">SA.</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="healthcare.html">Healthcare</a>
-    <a href="experience.html">Experience</a>
-    <a href="professional-skills.html">Professional Skills</a>
-    <a href="highlights.html">Highlights</a>
-    <a href="service-areas.html">Service Areas</a>
-</nav>
-</header>
+<header class="site-header">
 
+  <div class="logo">SA.</div>
+
+  <div class="nav-actions">
+
+    <a href="index.html" class="nav-icon">
+      🏠 Home
+    </a>
+
+    <a href="about.html" class="nav-icon">
+      👤 About
+    </a>
+
+    <div class="menu-wrap">
+
+      <button class="menu-toggle"
+      onclick="document.getElementById('siteMenu').classList.toggle('show')">
+        ☰
+      </button>
+
+      <div class="menu-panel" id="siteMenu">
+
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="experience.html">Experience</a>
+        <a href="professional-skills.html">Professional Skills</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="service-areas.html">Service Areas</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</header
 <div class="hero" id="home">
     <img class="avatar" src="saimum-profile.jpg" alt="Saimum Azam">
   <h1>Hi, I'm <span>Saimum Azam</span></h1>
