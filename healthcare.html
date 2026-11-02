@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,32 +173,30 @@ footer {
 </style>
 </head>
 
-<body>
-
-<header>
+<header class="site-header">
     <div class="logo">SA.</div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="healthcare.html">Healthcare</a>
-    </nav>
+    <div class="nav-actions">
+        <a href="index.html" class="nav-icon">🏠 Home</a>
+        <div class="menu-wrap">
+            <button class="menu-toggle"
+            onclick="document.getElementById('siteMenu').classList.toggle('show')">
+                ☰
+            </button>
+
+            <div class="menu-panel" id="siteMenu">
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="healthcare.html">Healthcare</a>
+                <a href="experience.html">Experience</a>
+                <a href="professional-skills.html">Professional Skills</a>
+                <a href="highlights.html">Highlights</a>
+                <a href="service-areas.html">Service Areas</a>
+            </div>
+        </div>
+    </div>
 </header>
-
-<main class="container">
-
-    <h1>Healthcare & Diagnostic Services</h1>
-
-    <p class="subtitle">
-        Dedicated to patient convenience,
-        sample collection and diagnostic service coordination.
-    </p>
-
-    <h2>Our Services</h2>
-
-    <div class="service-grid">
 
         <div class="service-card">
             <h3>🩸 Blood Sample Collection</h3>
