@@ -1,4 +1,3 @@
-
 const pathologyTests = [
   {sl:14, code:"441", name:"Absolute Neutrophil Count", category:"Routine", vials:"EDTA", days:0, mrp:200, extra:""},
   {sl:15, code:"24", name:"ACE (Angiotensin Converting Enzyme)", category:"Special", vials:"CLOT", days:2, mrp:1100, extra:""},
