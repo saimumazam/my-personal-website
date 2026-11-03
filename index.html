@@ -451,7 +451,7 @@ nav a {
   }
 }
 /* Homepage: show only selected sections */
-body > section:not(#healthcare):not(#workflow):not(#booking):not(#reviews):not(#faq) {
+body > section:not(#healthcare):not(#workflow):not(#booking):not(#reviews):not(#faq):not(#service-areas) {
     display: none !important;
 }    
 </style>
@@ -825,28 +825,63 @@ document.getElementById("feedbackForm")
     </div>
   </div>
   </section>
-  <section id="service-areas">
+  
+<section id="service-areas">
   <h2>📍 Our Service Areas</h2>
-  <p>Daily Home Blood Sample Collection Service – By Appointment.</p>
 
-  <div class="skills">
-    <div class="skill">📍 Kashimnagar</div>
-    <div class="skill">📍 Hayatnagar</div>
-    <div class="skill">📍 Paikar</div>
-    <div class="skill">📍 Kutubpur</div>
-    <div class="skill">📍 Vagail</div>
-    <div class="skill">📍 Dantura</div>
-    <div class="skill">📍 Laxmidanga</div>
-    <div class="skill">📍 Borsapukur</div>
-    <div class="skill">📍 Mitrapur</div>
-  </div>
+  <p>
+    Daily Home Blood Sample Collection Service – By Appointment.
+  </p>
 
-  <div class="contact-buttons">
-    <a class="contact-btn" href="https://wa.me/917797911282" target="_blank">
-      Book Home Collection on WhatsApp
-    </a>
+  <div class="project"
+       style="max-width:850px;margin:25px auto;">
+
+    <h3>Explore Our Service Locations</h3>
+
+    <div style="width:100%;height:350px;overflow:hidden;border-radius:14px;border:1px solid #d4af37;margin:18px 0;">
+
+      <iframe
+        src="https://maps.google.com/maps?q=Paikar%2C%20Birbhum%2C%20West%20Bengal%2C%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Service Area Map">
+      </iframe>
+
+    </div>
+
+    <h3>Available Service Areas</h3>
+
+    <div class="skills">
+      <div class="skill">📍 Kashimnagar</div>
+      <div class="skill">📍 Hayatnagar</div>
+      <div class="skill">📍 Paikar</div>
+      <div class="skill">📍 Kutubpur</div>
+      <div class="skill">📍 Vagail</div>
+      <div class="skill">📍 Dantura</div>
+      <div class="skill">📍 Laxmidanga</div>
+      <div class="skill">📍 Borsapukur</div>
+      <div class="skill">📍 Mitrapur</div>
+    </div>
+
+    <p style="margin-top:20px;">
+      Please contact us to confirm home collection
+      availability in your location.
+    </p>
+
+    <div class="contact-buttons">
+      <a class="contact-btn"
+         href="https://wa.me/917797911282"
+         target="_blank">
+        Book Home Collection on WhatsApp
+      </a>
+    </div>
+
   </div>
-  </section>
+</section>
+
   <section id="skills">
   <h2>My Interests</h2>
   <div class="skills">
