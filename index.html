@@ -552,6 +552,65 @@ body > section:not(#healthcare):not(#workflow):not(#booking) {
 </section>
 
 
+<section id="booking">
+  <h2>Smart Home Collection Booking</h2>
+
+  <div class="about">
+    <p>Book your convenient home blood sample collection by submitting your details below.</p>
+  </div>
+
+  <div class="project" style="max-width:520px;margin:25px auto;">
+    <form id="homeBookingForm">
+
+      <label>Patient Name</label>
+      <input type="text" id="patientName" required
+        placeholder="Enter your full name"
+        style="width:100%;padding:13px;margin:8px 0 16px;border-radius:10px;border:1px solid #d4af37;background:#17223a;color:white;">
+
+      <label>Mobile Number</label>
+      <input type="tel" id="patientPhone" required
+        pattern="[0-9]{10}" maxlength="10"
+        placeholder="10-digit mobile number"
+        style="width:100%;padding:13px;margin:8px 0 16px;border-radius:10px;border:1px solid #d4af37;background:#17223a;color:white;">
+
+      <label>Preferred Collection Date</label>
+      <input type="date" id="collectionDate" required
+        style="width:100%;padding:13px;margin:8px 0 16px;border-radius:10px;border:1px solid #d4af37;background:#17223a;color:white;">
+
+      <label>Full Address / Location</label>
+      <textarea id="patientAddress" required
+        placeholder="Enter your complete address"
+        style="width:100%;padding:13px;margin:8px 0 20px;border-radius:10px;border:1px solid #d4af37;background:#17223a;color:white;min-height:90px;"></textarea>
+
+      <button type="submit" class="contact-btn"
+        style="width:100%;border:none;cursor:pointer;">
+        Send Booking on WhatsApp
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<script>
+document.getElementById("homeBookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("patientName").value.trim();
+  const phone = document.getElementById("patientPhone").value.trim();
+  const date = document.getElementById("collectionDate").value;
+  const address = document.getElementById("patientAddress").value.trim();
+
+  const message =
+    "Hello, I want to book a home blood sample collection.%0A%0A" +
+    "Patient Name: " + encodeURIComponent(name) + "%0A" +
+    "Mobile: " + encodeURIComponent(phone) + "%0A" +
+    "Preferred Date: " + encodeURIComponent(date) + "%0A" +
+    "Address: " + encodeURIComponent(address);
+
+  window.open("https://wa.me/917797911282?text=" + message, "_blank");
+});
+</script>
+  
 <section id="workflow">
   <h2>How It Works</h2>
 
