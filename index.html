@@ -453,7 +453,123 @@ nav a {
 /* Homepage: show only selected sections */
 body > section:not(#healthcare):not(#workflow):not(#booking):not(#reviews):not(#faq):not(#service-areas) {
     display: none !important;
-}    
+}
+    /* PREMIUM FROSTED GLASS HOMEPAGE */
+
+body {
+  background:
+    radial-gradient(ellipse at 15% 15%, #315b7c 0%, transparent 45%),
+    linear-gradient(135deg, #071a2d, #142c43 55%, #263c4b);
+  color: #f8fbff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.glass-home {
+  padding: 55px 6%;
+  max-width: 1450px;
+  margin: auto;
+}
+
+.glass-hero {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  padding: 55px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 32px;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,.20),
+    rgba(255,255,255,.05)
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 25px 70px rgba(0,0,0,.22);
+}
+
+.glass-content {
+  max-width: 650px;
+}
+
+.glass-content h1 {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.12;
+  margin: 18px 0;
+}
+
+.glass-content p {
+  color: #d7e6f3;
+  font-size: 17px;
+}
+
+.glass-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 25px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.20);
+  backdrop-filter: blur(15px);
+  transition: .3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255,255,255,.35);
+  transform: translateY(-3px);
+}
+
+.glass-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.glass-card {
+  min-height: 220px;
+  padding: 32px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,.30);
+  background: rgba(255,255,255,.12);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  transition: .3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,.20);
+}
+
+.glass-card h2 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.glass-card p {
+  color: #d7e6f3;
+}
+
+@media(max-width:700px) {
+  .glass-home {
+    padding: 25px 16px;
+  }
+
+  .glass-hero {
+    min-height: 340px;
+    padding: 28px;
+  }
+
+  .glass-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glass-card {
+    min-height: 180px;
+  }
+}
 </style>
 </head>
 
@@ -495,61 +611,55 @@ body > section:not(#healthcare):not(#workflow):not(#booking):not(#reviews):not(#
 
   </div>
 
-</header
-<div class="hero" id="home">
-    <img class="avatar" src="saimum-profile.jpg" alt="Saimum Azam">
-  <h1>Hi, I'm <span>Saimum Azam</span></h1>
-  <p>Blood Sample Collection Support | Blood Collection Services | Patient Care | Healthcare Services | GNM Nursing Professional</p>
-  <a class="btn" href="about.html">Explore My World</a>
-</div>
+</header>
+<main class="glass-home" id="home">
 
+  <section class="glass-hero">
+    <div class="glass-content">
+      <span>WELCOME TO MY WORLD</span>
 
-<section id="healthcare">
-  <h2>Healthcare & Diagnostic Services</h2>
+      <h1>
+        Healthcare &<br>
+        Diagnostic Services
+      </h1>
 
-  <div class="about">
-    <p>
-  I provide blood sample collection support and patient care services with a focus on safety, convenience, and reliable healthcare assistance.
-    </p>
-  </div>
-
-  <div class="projects">
-    <div class="project">
-      <h3>🩸 Blood Sample Collection</h3>
       <p>
-        Convenient blood sample collection with a focus
-        on patient care and reliable service.
+        Blood Sample Collection · Lab Support · Patient Care
       </p>
-    </div>
 
-    <div class="project">
-      <h3>🔬 Diagnostic Test Assistance</h3>
-      <p>
-        Assistance with arranging diagnostic tests through trusted laboratory partners.
-      </p>
+      <a href="healthcare.html" class="glass-button">
+        Explore Healthcare →
+      </a>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>🏠 Home Collection Support</h3>
+  <div class="glass-grid">
+
+    <section class="glass-card">
+      <h2>About Me</h2>
       <p>
-        Convenient home blood sample collection with a focus on patient comfort, safety, and care.
+        Discover my professional background,
+        experience and healthcare journey.
       </p>
-    </div>
-  <div class="project">
-    <h3>🧪 Lab Collection Support</h3>
-    <p>
-        Providing careful sample collection support, proper handling, and timely transfer to diagnostic laboratories.
-    </p>
+      <a href="about.html" class="glass-button">
+        Explore My World →
+      </a>
+    </section>
+
+    <section class="glass-card">
+      <h2>Home Collection</h2>
+      <p>
+        Convenient blood sample collection
+        and patient care support.
+      </p>
+      <a href="healthcare.html" class="glass-button">
+        Book Home Collection →
+      </a>
+    </section>
+
   </div>
-  </div>
-  <div class="contact-buttons">
-  <a class="contact-btn"
-     href="https://wa.me/917797911282?text=Hello%2C%20I%20want%20to%20book%20a%20home%20blood%20sample%20collection."
-     target="_blank">
-    🩸 Book Home Collection on WhatsApp
-  </a>
-  </div>
-</section>
+
+</main>
 
 
 <section id="booking">
