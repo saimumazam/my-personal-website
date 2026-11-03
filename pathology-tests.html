@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathology Test Catalogue</title>
 
+  <link rel="stylesheet" href="theme.css">
+
+  <style>
+    .pathology-page {
+      max-width: 1250px;
+      margin: auto;
+      padding: 30px 16px 60px;
+    }
+
+    .pathology-heading {
+      margin-bottom: 24px;
+    }
+
+    .pathology-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 16px;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(18px);
+    }
+
+    .pathology-test-table {
+      width: 100%;
+      min-width: 950px;
+      border-collapse: collapse;
+    }
+
+    .pathology-test-table th,
+    .pathology-test-table td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,.18);
+      color: #fff;
+    }
+
+    .pathology-test-table th {
+      background: rgba(120,190,225,.22);
+      white-space: nowrap;
+    }
+
+    .pathology-extra-input {
+      width: 100px;
+      padding: 8px;
+      color: #fff;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 8px;
+    }
+
+    .pathology-back {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 9px 16px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 12px;
+      background: rgba(255,255,255,.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="pathology-page">
+
+    <a class="pathology-back" href="index.html">
+      ← Back to Home
+    </a>
+
+    <div class="pathology-heading">
+      <h1>Pathology Test Catalogue</h1>
+      <p>Blood & Pathology Test List</p>
+    </div>
+
+    <div class="pathology-table-wrap">
+      <div id="pathology-table"></div>
+    </div>
+
+  </main>
+
+  <script src="pathology-tests.js"></script>
+
+  <script>
+    renderPathologyTests("pathology-table");
+  </script>
+
+</body>
+</html>
