@@ -248,3 +248,61 @@ footer {
     transition-duration: .01ms !important;
   }
 }
+
+/* MOBILE PERFORMANCE FIX */
+@media (max-width: 700px) {
+  body {
+    background-attachment: scroll !important;
+  }
+
+  .site-header,
+  .menu-panel,
+  .card,
+  .service-card,
+  .areas,
+  .experience,
+  .contact,
+  .intro,
+  .area-card,
+  .booking,
+  .skill-card,
+  .highlight,
+  .note,
+  .project-card,
+  .project,
+  .skills .skill,
+  .glass-hero,
+  .glass-card,
+  .glass-button,
+  .pathology-table-wrap {
+    -webkit-backdrop-filter: blur(8px) saturate(125%) !important;
+    backdrop-filter: blur(8px) saturate(125%) !important;
+  }
+
+  .glass-hero::after {
+    animation: none !important;
+    display: none !important;
+  }
+
+  .card,
+  .service-card,
+  .area-card,
+  .skill-card,
+  .project-card,
+  .glass-card,
+  .glass-button,
+  .nav-icon,
+  .menu-toggle {
+    transition: none !important;
+  }
+
+  .card:hover,
+  .service-card:hover,
+  .area-card:hover,
+  .skill-card:hover,
+  .project-card:hover,
+  .glass-card:hover,
+  .glass-button:hover {
+    transform: none !important;
+  }
+}
