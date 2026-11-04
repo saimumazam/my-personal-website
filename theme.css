@@ -416,3 +416,37 @@ footer {
     backdrop-filter: none !important;
   }
 }
+
+/* =====================================
+   DESKTOP FLUID WIDTH FIX
+   Better screen space usage at low zoom
+===================================== */
+
+@media (min-width: 701px) {
+
+  .site-header,
+  header.site-header {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+    padding-left: clamp(24px, 4vw, 70px) !important;
+    padding-right: clamp(24px, 4vw, 70px) !important;
+  }
+
+  .glass-home {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+    padding-left: clamp(24px, 5vw, 90px) !important;
+    padding-right: clamp(24px, 5vw, 90px) !important;
+  }
+
+  .glass-home .glass-hero,
+  .glass-home .glass-grid {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+}
