@@ -306,3 +306,79 @@ footer {
     transform: none !important;
   }
 }
+/* =====================================
+   PC / LAPTOP PERFORMANCE OPTIMIZATION
+   Mobile styles remain unchanged
+===================================== */
+
+@media (min-width: 701px) {
+
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    background-attachment: scroll !important;
+  }
+
+  .site-header,
+  .menu-panel,
+  .card,
+  .service-card,
+  .areas,
+  .experience,
+  .contact,
+  .intro,
+  .area-card,
+  .booking,
+  .skill-card,
+  .highlight,
+  .note,
+  .project-card,
+  .project,
+  .skills .skill,
+  .glass-hero,
+  .glass-card,
+  .glass-button,
+  footer {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .glass-hero::after {
+    animation: none !important;
+    display: none !important;
+  }
+
+  .glass-home::before,
+  .glass-home::after {
+    filter: none !important;
+  }
+
+  .card,
+  .service-card,
+  .area-card,
+  .skill-card,
+  .project-card,
+  .glass-card,
+  .glass-hero {
+    box-shadow: 0 10px 25px rgba(0,12,26,.20) !important;
+    transition: none !important;
+  }
+
+  .card:hover,
+  .service-card:hover,
+  .area-card:hover,
+  .skill-card:hover,
+  .project-card:hover,
+  .glass-card:hover,
+  .glass-hero:hover {
+    transform: none !important;
+  }
+
+  .glass-button,
+  .nav-icon,
+  .menu-toggle {
+    transition: none !important;
+  }
+}
