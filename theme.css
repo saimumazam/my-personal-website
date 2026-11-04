@@ -382,3 +382,37 @@ footer {
     transition: none !important;
   }
 }
+/* EXTRA DESKTOP PERFORMANCE FIX */
+@media (min-width: 701px) {
+
+  /* Stop remaining card animations */
+  .project,
+  .skill,
+  .project-card,
+  .skill-card,
+  .lab-card,
+  .lab-hero {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Remove heavy hover rendering */
+  .project:hover,
+  .skill:hover,
+  .project-card:hover,
+  .skill-card:hover,
+  .lab-card:hover {
+    transform: none !important;
+    box-shadow: 0 8px 20px rgba(0,12,26,.20) !important;
+  }
+
+  /* Keep glass appearance without expensive blur */
+  .project,
+  .skill,
+  .lab-card,
+  .lab-hero,
+  .pathology-table-wrap {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
