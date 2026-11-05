@@ -1,6 +1,49 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://saimumazam.github.io/my-personal-website/</loc>
   </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/healthcare.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/skills.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/projects.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/experience.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/professional-skills.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/highlights.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/service-areas.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/laboratory.html</loc>
+  </url>
+
+  <url>
+    <loc>https://saimumazam.github.io/my-personal-website/pathology-tests.html</loc>
+  </url>
+
 </urlset>
